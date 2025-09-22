@@ -3,7 +3,7 @@ package lab1;
 public class Multiples {
     /**
      * Print out the number of multiples of 3 and 5 below 1000.
-     * @param args
+     * @param args command line arguments (not used)
      */
     public static void main(String[] args) {
         System.out.println(multiples(1000, 3, 5));
@@ -11,8 +11,9 @@ public class Multiples {
 
     /**
      * Count the multiples of a and b below n.
-     * @param a
-     * @param b
+     * @param a first multiple
+     * @param b second multiple
+     * @param n upper limit (not included)
      * @return count
      */
     static int multiples(int n, int a, int b) {
@@ -24,4 +25,9 @@ public class Multiples {
         }
         return count;
     }
+    static int multiples(){
+        return multiples(1000, 3, 5);
+    }
+
+
 }
